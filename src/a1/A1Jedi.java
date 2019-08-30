@@ -27,15 +27,19 @@ public class A1Jedi {
 	    			for(int j=0;j<item;j++) {
 	    		   number=scan.nextInt(); 
 	    		   name=scan.next();
+	    		   arr2=arr2.clone();
 	    		   for(int k=0;k<time;k++) {
 	    		           if(arr1[k].equals(name))  
 	    		           {         
 	    		    	  arr2[k]+=number;
-	    		    	  arr3[k]++;
 	       		           }
 	    		   }
-	    	              }
-		}
+	    		   for(int r=0;r<item;i++) {
+	    			   if(arr2[r]!=arr2.clone()[r]) {
+	    				   arr3[r]++;}
+	    		   }
+	    			   }
+	    		   }
 		for(int i=0;i<time;i++) {
 		if(arr3[i]==0) {
 			System.out.println("No customers bought "+arr1[i]);
