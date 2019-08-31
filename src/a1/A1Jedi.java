@@ -27,17 +27,20 @@ public class A1Jedi {
 	    			for(int j=0;j<item;j++) {
 	    		   number=scan.nextInt(); 
 	    		   name=scan.next();
-	    		   arr2=arr2.clone();
+	    		   int[] arr4=arr2.clone();
+ 
 	    		   for(int k=0;k<time;k++) {
 	    		           if(arr1[k].equals(name))  
 	    		           {         
 	    		    	  arr2[k]+=number;
+	    		    	 
 	       		           }
 	    		   }
-	    		   for(int r=0;r<item;i++) {
-	    			   if(arr2[r]!=arr2.clone()[r]) {
-	    				   arr3[r]++;}
-	    		   }
+	    		 for(int r=0;r<time;r++) {
+		    		  if(arr2[r]!=arr4[r]) {
+		    			  arr3[r]++;}
+		    		   }
+
 	    			   }
 	    		   }
 		for(int i=0;i<time;i++) {
